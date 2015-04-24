@@ -1,0 +1,36 @@
+ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		float: left;
+	    list-style: none;
+	    padding: 0 1em 0 0;
+	}
+}
+
+
+ul.menu--secondary {
+	font-size: $small-size;
+	li {
+	  	
+	}
+	a {
+    	font-weight: bold;
+    }
+}
+
+// media queries
+@media screen and (min-width: $medium-screen) {
+	.l-header ul.menu--secondary {
+		float: right;
+		margin-top: $h5-space;
+		clear: right;
+		li {
+			padding-right: 15px;
+		}
+		li:last-child {
+	  		padding-right: 0;
+		}
+	}
+}

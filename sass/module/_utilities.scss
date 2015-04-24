@@ -1,0 +1,53 @@
+@import 'icons';
+@import 'menu';
+@import 'search-box';
+
+.menu-show { // the checkbox
+	position: absolute;
+	opacity: 0;
+}
+.menu-show-label { // the label
+	-webkit-touch-callout: none;
+	user-select: none;
+	display: inline-block;
+	z-index: 1;
+	cursor: pointer;
+}
+/* checked styles (menu open state) */
+.menu-show--secondary:checked ~ .menu-show--secondary-label {
+  height: auto;
+  background: rgba(255, 255, 255, .8);
+}
+
+.utilities {
+	font-family: $helvetica;
+  	width: 100%;
+	height: 0;
+	line-height: 0;
+	overflow: hidden;
+	transition: height 0.25s;
+	position: relative;
+}
+.menu-show--secondary:checked ~ .utilities {
+	height: 2em;
+	line-height: normal;
+	overflow: visible;
+}
+
+// media queries
+@media screen and (min-width: $medium-screen) {
+	.l-header nav.utilities {
+		width: 65%;
+		height: auto;
+		line-height: normal;
+		overflow: visible;
+		float: right;
+		text-align: right;
+	}
+	.givalike .l-header nav.utilities {
+		opacity: 0.3;
+	}
+	.menu-show-label, .menu-show {
+		display: none;
+	}
+}

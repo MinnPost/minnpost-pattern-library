@@ -1,0 +1,17 @@
+.logo {
+	background-image: inline-image('logo.png');
+	background-size: contain;
+	width: 264px;
+	height: 37px;
+	display: block;
+	@include hide-text;
+	margin-top: 1.5em;
+}
+// media queries
+@media screen and (min-width: $medium-screen) {
+	.logo {
+		float: left;
+		width: 330px;
+		height: 46px;
+	}
+}
