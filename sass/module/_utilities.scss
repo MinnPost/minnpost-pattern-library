@@ -80,7 +80,7 @@
 }
 @media screen and (min-width: $nav-breaks) {
 	.menu-show--secondary ~ .utilities ul.menu--secondary {
-		padding: 0;
+		padding: 0.75em 0;
 	}
 	.l-header nav.utilities {
 		width: 55%;
