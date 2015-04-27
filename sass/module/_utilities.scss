@@ -20,9 +20,10 @@
 	padding: 4px;
 	border: 1px solid $gray-lightest;
 	border-radius: $base-border-radius;
+	font-size: 0.75rem;
 }
 .menu-show-label span {
-	@include burger(25px, 3px, 5px, #222);
+	@include burger(20px, 2px, 3px, #222);
 	margin-top: 4px;
 }
 .menu-show-label span, .menu-show-label span:before, .menu-show-label span:after {
@@ -69,6 +70,14 @@
 
 
 // media queries
+@media screen and (min-width: $small-screen) {
+	.menu-show-label { // the label
+		font-size: 1rem;
+	}
+	.menu-show-label span {
+		@include burger(25px, 3px, 5px, #222);
+	}
+}
 @media screen and (min-width: $nav-breaks) {
 	.menu-show--secondary ~ .utilities ul.menu--secondary {
 		padding: 0;

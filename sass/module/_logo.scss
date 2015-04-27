@@ -1,14 +1,21 @@
 .logo {
 	background-image: inline-image('logo.png');
 	background-size: contain;
-	width: 264px;
-	height: 37px;
+	background-repeat: no-repeat;
 	display: block;
 	@include hide-text;
 	//margin-top: 1.5em;
 	//margin-bottom: -1px;
+	width: 234px;
+	height: 33px;
 }
 // media queries
+@media screen and (min-width: $small-screen) {
+	.logo {
+		width: 264px;
+		height: 37px;
+	}
+}
 @media screen and (min-width: $nav-breaks) {
 	.logo {
 		float: left;
