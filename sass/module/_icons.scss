@@ -53,6 +53,7 @@ ul.social-icons--utilities {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: inline-block;
 	li {
 		float: left;
 	    list-style: none;
@@ -63,7 +64,6 @@ ul.social-icons--utilities {
 // media queries
 @media screen and (min-width: $medium-screen) {
 	ul.social-icons--utilities {
-		display: inline-block;
 		width: 180px;
 	}	
 }

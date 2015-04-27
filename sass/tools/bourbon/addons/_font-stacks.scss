@@ -12,6 +12,13 @@ $georgia: "Georgia", "Cambria", "Times New Roman", "Times", serif;
 
 $helvetica: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 
+/// Nimbus font stack.
+///
+/// @type List
+
+$nimbus: NimbusSanNovConD-Bol,Helvetica,Arial,Geneva,sans-serif;
+$nimbus-settings: "calt" off, "dlig" off, "ss01" off, "liga" off;
+
 /// Lucida Grande font stack.
 ///
 /// @type List

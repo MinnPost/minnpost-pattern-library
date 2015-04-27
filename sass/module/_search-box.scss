@@ -33,18 +33,25 @@
 	}
 }
 
-// media queries
-@media screen and (min-width: $medium-screen) {
-	.search-box--utilities {
-		display: inline-block;
+.search-box--utilities {
+	display: inline-block;
+	vertical-align: top;
+	.container-inline {
+		border: 2px solid $gray-lightest;
+		width: auto;
+		height: 29px;
 		vertical-align: top;
+		margin-top: -2px;
+		position: relative;
+	}
+}
+
+// media queries
+@media screen and (min-width: $nav-breaks) {
+	.search-box--utilities {
 		margin-left: 21px;
 		.container-inline {
-			border: 2px solid $gray-lightest;
 			width: 105px;
-			height: 29px;
-			vertical-align: top;
-			margin-top: -2px;
 		}
 	}
 }

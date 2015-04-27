@@ -8,6 +8,7 @@
 
 // Neat Breakpoints
 $medium-screen: em(640);
+$nav-breaks: em(805);
 $large-screen: em(860);
 
 $medium-screen-up: new-breakpoint(min-width $medium-screen 4);

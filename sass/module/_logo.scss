@@ -5,13 +5,15 @@
 	height: 37px;
 	display: block;
 	@include hide-text;
-	margin-top: 1.5em;
+	//margin-top: 1.5em;
+	//margin-bottom: -1px;
 }
 // media queries
-@media screen and (min-width: $medium-screen) {
+@media screen and (min-width: $nav-breaks) {
 	.logo {
 		float: left;
 		width: 330px;
 		height: 46px;
+		margin-top: 1.5em;
 	}
 }
